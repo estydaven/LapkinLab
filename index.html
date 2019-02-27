@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LapkinLab!</title>
+  </head>
+  <body>
+      <!-- MODAL -->
+    <div class="feedback">
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">ОБРАТНАЯ СВЯЗЬ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+                </div>
+                <form action="" class="modal-form" novalidate>
+                    <div class="modal-body">
+                        <div class="input">
+                            <div class="input__block">
+                                <p class="input__text">Ваше имя*</p>
+                                <input type="text" class="input__field form-control" required type="text">
+                                <div class="invalid-tooltip">
+                                    Поле обязательно для заполнения!
+                                </div>
+                            </div>
+                            <div class="input__block">
+                                <p class="input__text">Телефон*</p>
+                                <input type="text" class="input__field form-control" required type="tel">
+                                <div class="invalid-tooltip">
+                                     Поле обязательно для заполнения!
+                                </div>
+                            </div>
+                            <div class="input__block">
+                                <p class="input__text">Email*</p>
+                                <input type="text" class="input__field form-control" required type="email">
+                                <div class="invalid-tooltip">
+                                    Поле обязательно для заполнения!
+                                </div>
+                            </div>
+                            <div class="input__block">
+                                <p class="input__text">Сообщение</p>
+                                <textarea type="text" class="input__field form-control" type="text" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">                
+                        <button type="submit" class="btn modal-footer_btn">Отправить</button>
+                    </div>
+                </form>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  HEADER -->
+    <div class="header">
+        <div class="container">
+            <div class="container__wrapper">
+                <header class="header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header__logo">
+                                <img src="./img/logo.png" alt="логотип" class="img-fluid" width="273" height="100">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="header__contacts">
+                                <div class="header__phone">
+                                    <a href="#" class="phone-text">+7(499) 777-77-77</a>
+                                </div>
+                                <div class="header__phone">
+                                    <a href="#" class="phone-text">+7(499) 777-77-77</a>
+                                </div>
+                                <div class="header__feedback">
+                                    <button type="button" class="feedback-link" id="myInput" data-toggle="modal" data-target="#Modal">Обратная связь</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>                
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <div class="menu">
+        <div class="container">
+            <div class="container__wrapper">
+                <nav class="navbar navbar-expand-sm justify-content-center">
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Прайс-лист</a>
+                            </li>
+                            <li class="nav-item nav-item_noborder">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>        
+            </div>
+        </div>
+    </div>    
+    <!-- CAROUSEL -->
+    <section class="slider">
+        <div class="container-fluid">            
+                <div id="carouselExampleControls" class="carousel carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="4000" data-pause="false">
+                            <img src="./img/slide-1.jpg" class="d-block w-100 carousel__image" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="4000" data-pause="false">
+                            <img src="./img/night_bg2.jpg" class="d-block w-100 carousel__image" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="4000" data-pause="false">
+                            <img src="./img/slide-2.jpg" class="d-block w-100 carousel__image" alt="...">
+                        </div>            
+                    </div>
+                <div class="container__wrapper">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!-- MAIN SECTION -->
+    <section class="main">
+        <div class="container">
+            <div class="container__wrapper">
+                <div class="breadcrumb-box">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Главная</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Каталог</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Бытовая техника</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="catalog">
+                    <div class="leftblock">
+                        <div class="leftblock__accordion">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <a class="card__link collapsed" href="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    Автомобили
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                    <ul class="card-body__list">
+                                                            <li class="card-body__item">
+                                                                <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                            </li>
+                                                            <li class="card-body__item">
+                                                                <a href="" class="card-body__link">Холодильники</a>
+                                                            </li>
+                                                            <li class="card-body__item">
+                                                                <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                            </li>
+                                                            <li class="card-body__item card-body__item_active">
+                                                                <a href="" class="card-body__link">Чайники</a>
+                                                            </li>
+                                                        </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                              <a class="card__link card__link_active" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                Бытовая техника
+                                              </a>
+                                            </h5>
+                                        </div>                                      
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul class="card-body__list">
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Холодильники</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                    </li>
+                                                    <li class="card-body__item card-body__item_active">
+                                                        <a href="" class="card-body__link">Чайники</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                              <a class="card__link collapsed" href="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Мобильная техника
+                                              </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                              <ul class="card-body__list">
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Холодильники</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                    </li>
+                                                    <li class="card-body__item card-body__item_active">
+                                                        <a href="" class="card-body__link">Чайники</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                              <a class="card__link collapsed" href="" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Компьютеры
+                                              </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                              <ul class="card-body__list">
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Холодильники</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                    </li>
+                                                    <li class="card-body__item card-body__item_active">
+                                                        <a href="" class="card-body__link">Чайники</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <a class="card__link collapsed"  href="" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    Одежда
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul class="card-body__list">
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Холодильники</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                    </li>
+                                                    <li class="card-body__item card-body__item_active">
+                                                        <a href="" class="card-body__link">Чайники</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <h5 class="mb-0">
+                                                <a class="card__link collapsed" href="" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    Недвижимость
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul class="card-body__list">
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link card-body__link_active">Микроволновки</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Холодильники</a>
+                                                    </li>
+                                                    <li class="card-body__item">
+                                                        <a href="" class="card-body__link">Посудомоечные машины</a>
+                                                    </li>
+                                                    <li class="card-body__item card-body__item_active">
+                                                        <a href="" class="card-body__link">Чайники</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="leftblock__price">
+                            <div class="price-box">
+                                <a href="" class="price-box__item">
+                                    <img src="./img/exel.png" alt="" class="img-fluid price-box__image">
+                                    <p class="price-box__text">Прайс-лист</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerblock">
+                        <div class="container">
+                            <div class="centerblock__box">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="centerblock-card">                                    
+                                            <div class="centerblock-card__inner">
+                                                <div class="centerblock-card__image">
+                                                    <img src="./img/nophoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="centerblock-card__text">
+                                                    <p>Самый клевый чайник, который надо купить!</p>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__text">
+                                                        <p>1 900 р.</p>
+                                                    </div>
+                                                    <div class="price__image">
+                                                        <a href="" class="price__link">
+                                                            <img src="./img/basket.png" alt="" class="img-fluid price__picture">
+                                                        </a>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="centerblock-card">                                    
+                                            <div class="centerblock-card__inner">
+                                                <div class="centerblock-card__image">
+                                                    <img src="./img/nophoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="centerblock-card__text">
+                                                    <p>Самый клевый чайник, который надо купить!</p>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__text">
+                                                        <p>1 900 р.</p>
+                                                    </div>
+                                                    <div class="price__image">
+                                                        <a href="" class="price__link">
+                                                            <img src="./img/basket.png" alt="" class="img-fluid price__picture">
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="centerblock-card">                                    
+                                            <div class="centerblock-card__inner">
+                                                <div class="centerblock-card__image">
+                                                    <img src="./img/nophoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="centerblock-card__text">
+                                                    <p>Самый клевый чайник, который надо купить!</p>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__text">
+                                                        <p>1 900 р.</p>
+                                                    </div>
+                                                    <div class="price__image">
+                                                        <a href="" class="price__link">
+                                                            <img src="./img/basket.png" alt="" class="img-fluid price__picture">
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="centerblock__box">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="centerblock-card">                                    
+                                            <div class="centerblock-card__inner">
+                                                <div class="centerblock-card__image">
+                                                    <img src="./img/nophoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="centerblock-card__text">
+                                                    <p>Самый клевый чайник, который надо купить!</p>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__text">
+                                                        <p>1 900 р.</p>
+                                                    </div>
+                                                    <div class="price__image">
+                                                        <a href="" class="price__link">
+                                                            <img src="./img/basket.png" alt="" class="img-fluid price__picture">
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="centerblock-card">                                    
+                                            <div class="centerblock-card__inner">
+                                                <div class="centerblock-card__image">
+                                                    <img src="./img/nophoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="centerblock-card__text">
+                                                    <p>Самый клевый чайник, который надо купить!</p>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__text">
+                                                        <p>1 900 р.</p>
+                                                    </div>
+                                                    <div class="price__image">
+                                                        <a href="" class="price__link">
+                                                            <img src="./img/basket.png" alt="" class="img-fluid price__picture">
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="centerblock__pagination">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">                                        
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link page-link_span">
+                                                3
+                                                <span class="sr-only">(current)</span>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="centerblock-text">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="centerblock-text__block">
+                                            <p>Компания «Компания» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="centerblock-text__block">
+                                            <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="container__wrapper">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer__company">
+                            <p>© 2012–2013 ЗАО «Компания»</p>
+                            <p>info@name.ru</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-nav">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">Главная</a>                                    
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">Каталог</a>                                    
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">Доставка и оплата</a>                                    
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">Прайс-лист</a>                                    
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">Контакты</a>                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer__developer">
+                            <a href="#" class="developer-link">Разработка сайта - </a>
+                            <p>компания «Компания»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
